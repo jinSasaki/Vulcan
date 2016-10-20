@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		938206841DB9128B0004D948 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938206831DB9128B0004D948 /* AppDelegate.swift */; };
+		938206861DB9128B0004D948 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938206851DB9128B0004D948 /* ViewController.swift */; };
+		938206891DB9128B0004D948 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 938206871DB9128B0004D948 /* Main.storyboard */; };
+		9382068B1DB9128B0004D948 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9382068A1DB9128B0004D948 /* Assets.xcassets */; };
+		9382068E1DB9128B0004D948 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9382068C1DB9128B0004D948 /* LaunchScreen.storyboard */; };
+		938206991DB9128B0004D948 /* VulcanSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938206981DB9128B0004D948 /* VulcanSampleTests.swift */; };
+		938206A61DB912C70004D948 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938206A41DB912C70004D948 /* ImageDownloader.swift */; };
+		938206A71DB912C70004D948 /* UIImageView+MultiImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 938206A51DB912C70004D948 /* UIImageView+MultiImageDownloader.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		938206951DB9128B0004D948 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 938206781DB9128B0004D948 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9382067F1DB9128B0004D948;
+			remoteInfo = VulcanSample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		938206801DB9128B0004D948 /* VulcanSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VulcanSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		938206831DB9128B0004D948 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		938206851DB9128B0004D948 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		938206881DB9128B0004D948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9382068A1DB9128B0004D948 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9382068D1DB9128B0004D948 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9382068F1DB9128B0004D948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938206941DB9128B0004D948 /* VulcanSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VulcanSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		938206981DB9128B0004D948 /* VulcanSampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VulcanSampleTests.swift; sourceTree = "<group>"; };
+		9382069A1DB9128B0004D948 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		938206A41DB912C70004D948 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		938206A51DB912C70004D948 /* UIImageView+MultiImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+MultiImageDownloader.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9382067D1DB9128B0004D948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938206911DB9128B0004D948 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		938206771DB9128B0004D948 = {
+			isa = PBXGroup;
+			children = (
+				938206821DB9128B0004D948 /* VulcanSample */,
+				938206971DB9128B0004D948 /* VulcanSampleTests */,
+				938206811DB9128B0004D948 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		938206811DB9128B0004D948 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				938206801DB9128B0004D948 /* VulcanSample.app */,
+				938206941DB9128B0004D948 /* VulcanSampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		938206821DB9128B0004D948 /* VulcanSample */ = {
+			isa = PBXGroup;
+			children = (
+				938206831DB9128B0004D948 /* AppDelegate.swift */,
+				938206851DB9128B0004D948 /* ViewController.swift */,
+				938206871DB9128B0004D948 /* Main.storyboard */,
+				9382068A1DB9128B0004D948 /* Assets.xcassets */,
+				938206A31DB912C70004D948 /* Source */,
+				9382068C1DB9128B0004D948 /* LaunchScreen.storyboard */,
+				9382068F1DB9128B0004D948 /* Info.plist */,
+			);
+			path = VulcanSample;
+			sourceTree = "<group>";
+		};
+		938206971DB9128B0004D948 /* VulcanSampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				938206981DB9128B0004D948 /* VulcanSampleTests.swift */,
+				9382069A1DB9128B0004D948 /* Info.plist */,
+			);
+			path = VulcanSampleTests;
+			sourceTree = "<group>";
+		};
+		938206A31DB912C70004D948 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				938206A41DB912C70004D948 /* ImageDownloader.swift */,
+				938206A51DB912C70004D948 /* UIImageView+MultiImageDownloader.swift */,
+			);
+			name = Source;
+			path = ../../../Source;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9382067F1DB9128B0004D948 /* VulcanSample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9382069D1DB9128B0004D948 /* Build configuration list for PBXNativeTarget "VulcanSample" */;
+			buildPhases = (
+				9382067C1DB9128B0004D948 /* Sources */,
+				9382067D1DB9128B0004D948 /* Frameworks */,
+				9382067E1DB9128B0004D948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VulcanSample;
+			productName = VulcanSample;
+			productReference = 938206801DB9128B0004D948 /* VulcanSample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		938206931DB9128B0004D948 /* VulcanSampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 938206A01DB9128B0004D948 /* Build configuration list for PBXNativeTarget "VulcanSampleTests" */;
+			buildPhases = (
+				938206901DB9128B0004D948 /* Sources */,
+				938206911DB9128B0004D948 /* Frameworks */,
+				938206921DB9128B0004D948 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				938206961DB9128B0004D948 /* PBXTargetDependency */,
+			);
+			name = VulcanSampleTests;
+			productName = VulcanSampleTests;
+			productReference = 938206941DB9128B0004D948 /* VulcanSampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		938206781DB9128B0004D948 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Sasakky;
+				TargetAttributes = {
+					9382067F1DB9128B0004D948 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					938206931DB9128B0004D948 = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9382067F1DB9128B0004D948;
+					};
+				};
+			};
+			buildConfigurationList = 9382067B1DB9128B0004D948 /* Build configuration list for PBXProject "VulcanSample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 938206771DB9128B0004D948;
+			productRefGroup = 938206811DB9128B0004D948 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9382067F1DB9128B0004D948 /* VulcanSample */,
+				938206931DB9128B0004D948 /* VulcanSampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9382067E1DB9128B0004D948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9382068E1DB9128B0004D948 /* LaunchScreen.storyboard in Resources */,
+				9382068B1DB9128B0004D948 /* Assets.xcassets in Resources */,
+				938206891DB9128B0004D948 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938206921DB9128B0004D948 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9382067C1DB9128B0004D948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938206861DB9128B0004D948 /* ViewController.swift in Sources */,
+				938206A71DB912C70004D948 /* UIImageView+MultiImageDownloader.swift in Sources */,
+				938206A61DB912C70004D948 /* ImageDownloader.swift in Sources */,
+				938206841DB9128B0004D948 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		938206901DB9128B0004D948 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				938206991DB9128B0004D948 /* VulcanSampleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		938206961DB9128B0004D948 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9382067F1DB9128B0004D948 /* VulcanSample */;
+			targetProxy = 938206951DB9128B0004D948 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		938206871DB9128B0004D948 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				938206881DB9128B0004D948 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9382068C1DB9128B0004D948 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9382068D1DB9128B0004D948 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9382069B1DB9128B0004D948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9382069C1DB9128B0004D948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9382069E1DB9128B0004D948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VulcanSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9382069F1DB9128B0004D948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VulcanSample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanSample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		938206A11DB9128B0004D948 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VulcanSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VulcanSample.app/VulcanSample";
+			};
+			name = Debug;
+		};
+		938206A21DB9128B0004D948 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = VulcanSampleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanSampleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VulcanSample.app/VulcanSample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9382067B1DB9128B0004D948 /* Build configuration list for PBXProject "VulcanSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9382069B1DB9128B0004D948 /* Debug */,
+				9382069C1DB9128B0004D948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9382069D1DB9128B0004D948 /* Build configuration list for PBXNativeTarget "VulcanSample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9382069E1DB9128B0004D948 /* Debug */,
+				9382069F1DB9128B0004D948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		938206A01DB9128B0004D948 /* Build configuration list for PBXNativeTarget "VulcanSampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				938206A11DB9128B0004D948 /* Debug */,
+				938206A21DB9128B0004D948 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 938206781DB9128B0004D948 /* Project object */;
+}
