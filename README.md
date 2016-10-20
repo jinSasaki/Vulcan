@@ -11,7 +11,7 @@ Multi image downloader with priority in Swift
 
 Single download | Multi download with priority
 --- | ---
-![demo_01](https://github.com/jinSasaki/Vulcan/raw/master/assets/demo_01.gif) | ![demo_02](https://github.com/jinSasaki/Vulcan/raw/master/assets/demo_01.gif)
+![demo_01](https://github.com/jinSasaki/Vulcan/raw/master/assets/demo_01.gif) | ![demo_02](https://github.com/jinSasaki/Vulcan/raw/master/assets/demo_02.gif)
 
 ## Installation
 
