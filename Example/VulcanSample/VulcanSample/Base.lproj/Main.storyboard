@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ye2-Hw-sZS">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rGh-sq-cDh">
+            <objects>
+                <viewController id="ye2-Hw-sZS" customClass="ViewController" customModule="ImageDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zra-qc-rhB"/>
+                        <viewControllerLayoutGuide type="bottom" id="5YA-2b-emH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aLD-2g-K6G">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bMK-jj-E54">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bMK-jj-E54" secondAttribute="height" multiplier="1:1" id="wui-7o-BoT"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZWc-dd-sDA">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="gA8-2Q-Vr4"/>
+                                </constraints>
+                                <state key="normal" title="Set Single Image"/>
+                                <connections>
+                                    <action selector="didTapButton" destination="ye2-Hw-sZS" eventType="touchUpInside" id="EbJ-AN-gGy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3RL-C5-7rL">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="afq-0j-eYn"/>
+                                </constraints>
+                                <state key="normal" title="Set Image with Priority"/>
+                                <connections>
+                                    <action selector="didTapPriorityButton" destination="ye2-Hw-sZS" eventType="touchUpInside" id="eyX-Mq-UQq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ucd-YM-9jn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="4bO-JC-79o"/>
+                                </constraints>
+                                <state key="normal" title="Cache clear">
+                                    <color key="titleColor" red="0.98823529409999999" green="0.4549019608" blue="0.34901960780000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCacheClearButton" destination="ye2-Hw-sZS" eventType="touchUpInside" id="vb5-dk-Enj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bMK-jj-E54" firstAttribute="top" secondItem="Zra-qc-rhB" secondAttribute="bottom" id="0K4-Xe-v7Z"/>
+                            <constraint firstItem="bMK-jj-E54" firstAttribute="leading" secondItem="aLD-2g-K6G" secondAttribute="leading" constant="16" id="HHh-0V-AOi"/>
+                            <constraint firstAttribute="trailing" secondItem="bMK-jj-E54" secondAttribute="trailing" constant="16" id="Q0C-Yh-HcC"/>
+                            <constraint firstItem="3RL-C5-7rL" firstAttribute="leading" secondItem="aLD-2g-K6G" secondAttribute="leading" constant="16" id="RxZ-Ls-yUI"/>
+                            <constraint firstItem="ZWc-dd-sDA" firstAttribute="leading" secondItem="aLD-2g-K6G" secondAttribute="leading" constant="16" id="Xde-YJ-Dry"/>
+                            <constraint firstItem="3RL-C5-7rL" firstAttribute="top" secondItem="ZWc-dd-sDA" secondAttribute="bottom" constant="20" id="YuA-le-Hkl"/>
+                            <constraint firstAttribute="trailing" secondItem="3RL-C5-7rL" secondAttribute="trailing" constant="16" id="b7Y-EG-6ne"/>
+                            <constraint firstAttribute="trailing" secondItem="Ucd-YM-9jn" secondAttribute="trailing" constant="16" id="bmy-xp-2zy"/>
+                            <constraint firstAttribute="trailing" secondItem="ZWc-dd-sDA" secondAttribute="trailing" constant="16" id="hct-1F-ihV"/>
+                            <constraint firstItem="Ucd-YM-9jn" firstAttribute="top" secondItem="3RL-C5-7rL" secondAttribute="bottom" constant="20" id="vsT-a6-s6J"/>
+                            <constraint firstItem="Ucd-YM-9jn" firstAttribute="leading" secondItem="aLD-2g-K6G" secondAttribute="leading" constant="16" id="yFh-z0-bhO"/>
+                            <constraint firstItem="ZWc-dd-sDA" firstAttribute="top" secondItem="bMK-jj-E54" secondAttribute="bottom" constant="33" id="ypA-TY-FP8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="bMK-jj-E54" id="BvK-7m-Xse"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e1c-gk-GmQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+</document>
