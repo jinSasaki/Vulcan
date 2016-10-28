@@ -54,7 +54,7 @@ $ brew install carthage
 
 `Cartfile`
 ```
-github "Alamofire/Alamofire"
+github "jinSasaki/Vulcan"
 ```
 
 
