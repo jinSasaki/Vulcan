@@ -111,14 +111,14 @@ public class ImageDownloader {
         self.decoder = DefaultImageDecoder()
     }
 
-    public func setCache(_ cache: ImageCachable?) {
+    public func set(cache: ImageCachable?) {
         self.cache?.removeAll()
 
         self.cache = cache
-        self.configuration.urlCache = URLCache(memoryCapacity: 0, diskCapacity: cache?.diskCapacity ?? 0, diskPath: nil)
+        self.configuration.urlCache = URLCache(memoryCapacity: cache?.memoryCapacity ?? 0, diskCapacity: cache?.diskCapacity ?? 0, diskPath: cache?.diskPath)
     }
 
-    public func setConfiguration(_ configuration: URLSessionConfiguration) {
+    public func set(configuration: URLSessionConfiguration) {
         self.resetSession()
 
         self.configuration = configuration
