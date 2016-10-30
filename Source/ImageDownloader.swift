@@ -11,35 +11,6 @@ import ImageIO
 
 public typealias Image = UIImage
 
-public enum ImageResult {
-    case success(Image)
-    case failure(Error)
-}
-
-public protocol ImageComposable {
-    func compose(image: Image) throws -> Image
-}
-
-public protocol ImageCachable {
-    var memoryCapacity: Int { get }
-    var diskCapacity: Int { get }
-    var diskPath: String? { get }
-
-    func saveImage(image: Image, with id: String)
-    func image(id: String) -> Image?
-    func remove(id: String)
-    func removeAll()
-}
-
-public struct ImageDecodeOptions {
-    var outputSize: CGSize = CGSize.zero
-    var opaque: Bool = false
-}
-
-public protocol ImageDecoder {
-    func decode(data: Data, response: HTTPURLResponse, options: ImageDecodeOptions?) throws -> Image
-}
-
 public enum ImageDownloadError: Error, CustomDebugStringConvertible {
     case downloading
     case cancelled
@@ -64,11 +35,6 @@ public enum ImageDownloadError: Error, CustomDebugStringConvertible {
             return "Failed compose: \(error)"
         }
     }
-}
-
-public enum ImageDecodeError: Error {
-    case failedCreateSource
-    case failedCreateThumbnail
 }
 
 public struct DefaultImageDecoder: ImageDecoder {
@@ -124,6 +90,7 @@ public struct DefaultImageCache: ImageCachable {
 }
 
 public typealias ImageDownloadHandler = (_ url: URL, _ result: ImageResult) -> Void
+
 public class ImageDownloader {
     static let `default` = ImageDownloader()
 
