@@ -7,15 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4925B9331DC5E95C00D9408A /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9321DC5E95C00D9408A /* ImageResult.swift */; };
-		4925B9351DC5E97E00D9408A /* ImageComposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9341DC5E97E00D9408A /* ImageComposable.swift */; };
-		4925B9371DC5E99C00D9408A /* ImageCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9361DC5E99C00D9408A /* ImageCachable.swift */; };
-		4925B9391DC5E9B400D9408A /* ImageDecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9381DC5E9B400D9408A /* ImageDecorder.swift */; };
+		4925B9471DC6044800D9408A /* ImageCachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B93F1DC6044800D9408A /* ImageCachable.swift */; };
+		4925B9481DC6044800D9408A /* ImageComposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9401DC6044800D9408A /* ImageComposable.swift */; };
+		4925B9491DC6044800D9408A /* ImageDecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9411DC6044800D9408A /* ImageDecorder.swift */; };
+		4925B94A1DC6044800D9408A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9421DC6044800D9408A /* ImageDownloader.swift */; };
+		4925B94B1DC6044800D9408A /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9431DC6044800D9408A /* ImageResult.swift */; };
+		4925B94C1DC6044800D9408A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4925B9441DC6044800D9408A /* Info.plist */; };
+		4925B94D1DC6044800D9408A /* UIImageView+MultiImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9451DC6044800D9408A /* UIImageView+MultiImageDownloader.swift */; };
+		4925B97C1DC6066000D9408A /* Vulcan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4925B9561DC6060B00D9408A /* Vulcan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4925B9831DC6071600D9408A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4925B9801DC6071600D9408A /* Info.plist */; };
+		4925B9841DC6071600D9408A /* VulcanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9811DC6071600D9408A /* VulcanTests.swift */; };
 		933865C71DC33F5800B7D6F3 /* Vulcan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933865BD1DC33F5800B7D6F3 /* Vulcan.framework */; };
-		933865CC1DC33F5800B7D6F3 /* VulcanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933865CB1DC33F5800B7D6F3 /* VulcanTests.swift */; };
-		933865CE1DC33F5800B7D6F3 /* Vulcan.h in Headers */ = {isa = PBXBuildFile; fileRef = 933865C01DC33F5800B7D6F3 /* Vulcan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		933865DA1DC33F8E00B7D6F3 /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933865D81DC33F8E00B7D6F3 /* ImageDownloader.swift */; };
-		933865DB1DC33F8E00B7D6F3 /* UIImageView+MultiImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933865D91DC33F8E00B7D6F3 /* UIImageView+MultiImageDownloader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,18 +31,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4925B9321DC5E95C00D9408A /* ImageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResult.swift; sourceTree = "<group>"; };
-		4925B9341DC5E97E00D9408A /* ImageComposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComposable.swift; sourceTree = "<group>"; };
-		4925B9361DC5E99C00D9408A /* ImageCachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
-		4925B9381DC5E9B400D9408A /* ImageDecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDecorder.swift; sourceTree = "<group>"; };
+		4925B93F1DC6044800D9408A /* ImageCachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
+		4925B9401DC6044800D9408A /* ImageComposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComposable.swift; sourceTree = "<group>"; };
+		4925B9411DC6044800D9408A /* ImageDecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDecorder.swift; sourceTree = "<group>"; };
+		4925B9421DC6044800D9408A /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
+		4925B9431DC6044800D9408A /* ImageResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageResult.swift; sourceTree = "<group>"; };
+		4925B9441DC6044800D9408A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4925B9451DC6044800D9408A /* UIImageView+MultiImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+MultiImageDownloader.swift"; sourceTree = "<group>"; };
+		4925B9561DC6060B00D9408A /* Vulcan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vulcan.h; sourceTree = "<group>"; };
+		4925B9801DC6071600D9408A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4925B9811DC6071600D9408A /* VulcanTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VulcanTests.swift; sourceTree = "<group>"; };
 		933865BD1DC33F5800B7D6F3 /* Vulcan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vulcan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		933865C01DC33F5800B7D6F3 /* Vulcan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vulcan.h; sourceTree = "<group>"; };
-		933865C11DC33F5800B7D6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		933865C61DC33F5800B7D6F3 /* VulcanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VulcanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		933865CB1DC33F5800B7D6F3 /* VulcanTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VulcanTests.swift; sourceTree = "<group>"; };
-		933865CD1DC33F5800B7D6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		933865D81DC33F8E00B7D6F3 /* ImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDownloader.swift; sourceTree = "<group>"; };
-		933865D91DC33F8E00B7D6F3 /* UIImageView+MultiImageDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+MultiImageDownloader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +64,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4925B93E1DC6044800D9408A /* Vulcan */ = {
+			isa = PBXGroup;
+			children = (
+				4925B9561DC6060B00D9408A /* Vulcan.h */,
+				4925B93F1DC6044800D9408A /* ImageCachable.swift */,
+				4925B9401DC6044800D9408A /* ImageComposable.swift */,
+				4925B9411DC6044800D9408A /* ImageDecorder.swift */,
+				4925B9421DC6044800D9408A /* ImageDownloader.swift */,
+				4925B9431DC6044800D9408A /* ImageResult.swift */,
+				4925B9441DC6044800D9408A /* Info.plist */,
+				4925B9451DC6044800D9408A /* UIImageView+MultiImageDownloader.swift */,
+			);
+			name = Vulcan;
+			path = Sources/Vulcan;
+			sourceTree = "<group>";
+		};
+		4925B97E1DC6071600D9408A /* VulcanTests */ = {
+			isa = PBXGroup;
+			children = (
+				4925B9801DC6071600D9408A /* Info.plist */,
+				4925B9811DC6071600D9408A /* VulcanTests.swift */,
+			);
+			name = VulcanTests;
+			path = Tests/VulcanTests;
+			sourceTree = SOURCE_ROOT;
+		};
 		933865B31DC33F5800B7D6F3 = {
 			isa = PBXGroup;
 			children = (
-				933865BF1DC33F5800B7D6F3 /* Vulcan */,
-				933865CA1DC33F5800B7D6F3 /* VulcanTests */,
+				4925B93E1DC6044800D9408A /* Vulcan */,
+				4925B97E1DC6071600D9408A /* VulcanTests */,
 				933865BE1DC33F5800B7D6F3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,39 +108,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		933865BF1DC33F5800B7D6F3 /* Vulcan */ = {
-			isa = PBXGroup;
-			children = (
-				933865C01DC33F5800B7D6F3 /* Vulcan.h */,
-				933865C11DC33F5800B7D6F3 /* Info.plist */,
-				933865D71DC33F8E00B7D6F3 /* Source */,
-			);
-			path = Vulcan;
-			sourceTree = "<group>";
-		};
-		933865CA1DC33F5800B7D6F3 /* VulcanTests */ = {
-			isa = PBXGroup;
-			children = (
-				933865CB1DC33F5800B7D6F3 /* VulcanTests.swift */,
-				933865CD1DC33F5800B7D6F3 /* Info.plist */,
-			);
-			path = VulcanTests;
-			sourceTree = "<group>";
-		};
-		933865D71DC33F8E00B7D6F3 /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				4925B9361DC5E99C00D9408A /* ImageCachable.swift */,
-				4925B9341DC5E97E00D9408A /* ImageComposable.swift */,
-				4925B9381DC5E9B400D9408A /* ImageDecorder.swift */,
-				933865D81DC33F8E00B7D6F3 /* ImageDownloader.swift */,
-				4925B9321DC5E95C00D9408A /* ImageResult.swift */,
-				933865D91DC33F8E00B7D6F3 /* UIImageView+MultiImageDownloader.swift */,
-			);
-			name = Source;
-			path = ../../Source;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -120,7 +115,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933865CE1DC33F5800B7D6F3 /* Vulcan.h in Headers */,
+				4925B97C1DC6066000D9408A /* Vulcan.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,6 +201,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4925B94C1DC6044800D9408A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4925B9831DC6071600D9408A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,12 +220,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4925B9351DC5E97E00D9408A /* ImageComposable.swift in Sources */,
-				4925B9371DC5E99C00D9408A /* ImageCachable.swift in Sources */,
-				933865DA1DC33F8E00B7D6F3 /* ImageDownloader.swift in Sources */,
-				4925B9391DC5E9B400D9408A /* ImageDecorder.swift in Sources */,
-				4925B9331DC5E95C00D9408A /* ImageResult.swift in Sources */,
-				933865DB1DC33F8E00B7D6F3 /* UIImageView+MultiImageDownloader.swift in Sources */,
+				4925B94B1DC6044800D9408A /* ImageResult.swift in Sources */,
+				4925B9491DC6044800D9408A /* ImageDecorder.swift in Sources */,
+				4925B9481DC6044800D9408A /* ImageComposable.swift in Sources */,
+				4925B94A1DC6044800D9408A /* ImageDownloader.swift in Sources */,
+				4925B9471DC6044800D9408A /* ImageCachable.swift in Sources */,
+				4925B94D1DC6044800D9408A /* UIImageView+MultiImageDownloader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,7 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				933865CC1DC33F5800B7D6F3 /* VulcanTests.swift in Sources */,
+				4925B9841DC6071600D9408A /* VulcanTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,7 +355,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vulcan/Info.plist;
+				INFOPLIST_FILE = Sources/Vulcan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.Vulcan;
@@ -376,7 +373,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = Vulcan/Info.plist;
+				INFOPLIST_FILE = Sources/Vulcan/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.Vulcan;
@@ -390,7 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = VulcanTests/Info.plist;
+				INFOPLIST_FILE = Tests/VulcanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -402,7 +399,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				INFOPLIST_FILE = VulcanTests/Info.plist;
+				INFOPLIST_FILE = Tests/VulcanTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = jp.sasakky.VulcanTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
