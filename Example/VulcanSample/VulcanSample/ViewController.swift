@@ -22,8 +22,8 @@ class ViewController: UIViewController {
         imageView.image = nil
 
         imageView.vl_setImage(urls: [
-            UIImageView.PriorityURL(url: URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_100.jpg")!, priority: 100),
-            UIImageView.PriorityURL(url: URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_1024.jpg")!, priority: 1000)
+            .url(URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_100.jpg")!, priority: 100),
+            .url(URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_1024.jpg")!, priority: 1000)
             ])
     }
 

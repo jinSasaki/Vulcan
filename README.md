@@ -42,7 +42,7 @@ $ pod install
 ```
 
 
-### Carthage **[TODO]**
+### Carthage
 **NOTE: Not supported yet**  
 
 Setup carthage:
@@ -69,8 +69,8 @@ imageView.vl_setImage(url: URL(string: "/path/to/image")!)
 // Multi downloading
 // This image will be overridden by the image of higher priority URL.
 imageView.vl_setImage(urls: [
-    UIImageView.PriorityURL(url: URL(string: "/path/to/image")!, priority: 100),
-    UIImageView.PriorityURL(url: URL(string: "/path/to/image")!, priority: 1000)
+    .url(URL(string: "/path/to/image")!, priority: 100),
+    .url(URL(string: "/path/to/image")!, priority: 1000)
     ])
 ```
 
