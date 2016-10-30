@@ -88,20 +88,31 @@ public extension UIImageView {
         self.vl_downloadTaskId = id
     }
 
-    public struct PriorityURL {
-        public var url: URL
-        public var priority: Int
-        public var completion: ImageDownloadHandler?
-
-        public init(url: URL, priority: Int = 0, completion: ImageDownloadHandler? = nil){
-            self.url = url
-            self.priority = priority
-            self.completion = completion
+    public enum PriorityURL {
+        case url(URL, priority: Int)
+        case request(URLRequest, priority: Int)
+        
+        public var priority: Int {
+            switch self {
+            case .url(_, let priority):
+                return priority
+            case .request(_, let priority):
+                return priority
+            }
+        }
+        
+        public var url: URL {
+            switch self {
+            case .url(let url, _):
+                return url
+            case .request(let request, _):
+                return request.url!
+            }
         }
     }
 
     /// Download images with priority
-    func vl_setImage(urls: [PriorityURL], placeholderImage: UIImage? = nil, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil) {
+    public func vl_setImage(urls: [PriorityURL], placeholderImage: UIImage? = nil, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil) {
         let downloader = vl_imageDownloader ?? UIImageView.vl_sharedImageDownloader
         vl_cancelLoading()
 
@@ -127,7 +138,7 @@ public extension UIImageView {
         self.vl_downloadTaskId = ids.joined(separator: ",")
     }
 
-    func vl_showImage(image newImage: UIImage) {
+    internal func vl_showImage(image newImage: UIImage) {
         let imageView = vl_dummyView ?? UIImageView()
         imageView.frame = bounds
         imageView.alpha = 1
@@ -145,7 +156,7 @@ public extension UIImageView {
         }
     }
 
-    func vl_cancelLoading() {
+    public func vl_cancelLoading() {
         let downloader = vl_imageDownloader ?? UIImageView.vl_sharedImageDownloader
         guard let splited = vl_downloadTaskId?.components(separatedBy: ",") else {
             return
