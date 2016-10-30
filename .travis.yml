@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode8
+xcode_workspace: Vulcan.xcworkspace
+xcode_scheme: VulcanTests
