@@ -11,35 +11,6 @@ import ImageIO
 
 public typealias Image = UIImage
 
-public enum ImageResult {
-    case success(Image)
-    case failure(Error)
-}
-
-public protocol ImageComposable {
-    func compose(image: Image) throws -> Image
-}
-
-public protocol ImageCachable {
-    var memoryCapacity: Int { get }
-    var diskCapacity: Int { get }
-    var diskPath: String? { get }
-
-    func saveImage(image: Image, with id: String)
-    func image(id: String) -> Image?
-    func remove(id: String)
-    func removeAll()
-}
-
-public struct ImageDecodeOptions {
-    var outputSize: CGSize = CGSize.zero
-    var opaque: Bool = false
-}
-
-public protocol ImageDecoder {
-    func decode(data: Data, response: HTTPURLResponse, options: ImageDecodeOptions?) throws -> Image
-}
-
 public enum ImageDownloadError: Error, CustomDebugStringConvertible {
     case downloading
     case cancelled
@@ -64,11 +35,6 @@ public enum ImageDownloadError: Error, CustomDebugStringConvertible {
             return "Failed compose: \(error)"
         }
     }
-}
-
-public enum ImageDecodeError: Error {
-    case failedCreateSource
-    case failedCreateThumbnail
 }
 
 public struct DefaultImageDecoder: ImageDecoder {
@@ -124,17 +90,18 @@ public struct DefaultImageCache: ImageCachable {
 }
 
 public typealias ImageDownloadHandler = (_ url: URL, _ result: ImageResult) -> Void
-public class ImageDownloader {
-    static let `default` = ImageDownloader()
 
-    var cache: ImageCachable?
-    var decoder: ImageDecoder
+public class ImageDownloader {
+    public static let `default` = ImageDownloader()
+
+    public var cache: ImageCachable?
+    public var decoder: ImageDecoder
 
     fileprivate var downloadingTasks: [String: URLSessionDataTask] = [:]
     fileprivate var configuration: URLSessionConfiguration
     fileprivate var session: URLSession
 
-    init(cache: ImageCachable? = DefaultImageCache(), configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    public init(cache: ImageCachable? = DefaultImageCache(), configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
         self.cache = cache
         self.configuration = configuration
 
@@ -144,31 +111,31 @@ public class ImageDownloader {
         self.decoder = DefaultImageDecoder()
     }
 
-    func setCache(_ cache: ImageCachable?) {
+    public func setCache(_ cache: ImageCachable?) {
         self.cache?.removeAll()
 
         self.cache = cache
         self.configuration.urlCache = URLCache(memoryCapacity: 0, diskCapacity: cache?.diskCapacity ?? 0, diskPath: nil)
     }
 
-    func setConfiguration(_ configuration: URLSessionConfiguration) {
+    public func setConfiguration(_ configuration: URLSessionConfiguration) {
         self.resetSession()
 
         self.configuration = configuration
         self.session = URLSession(configuration: configuration)
     }
 
-    func resetSession() {
+    public func resetSession() {
         self.session.invalidateAndCancel()
         self.downloadingTasks.removeAll()
     }
 
-    func download(url: URL, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil, handler: ImageDownloadHandler?) -> String {
+    public func download(url: URL, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil, handler: ImageDownloadHandler?) -> String {
         let request = URLRequest(url: url)
         return download(request: request, composer: composer, options: options, handler: handler)
     }
 
-    func download(request: URLRequest, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil, handler: ImageDownloadHandler?) -> String {
+    public func download(request: URLRequest, composer: ImageComposable? = nil, options: ImageDecodeOptions? = nil, handler: ImageDownloadHandler?) -> String {
         guard let url = request.url else { return "" }
         let id = url.absoluteString
         if let cachedImage = self.cache?.image(id: id) {
@@ -245,7 +212,7 @@ public class ImageDownloader {
         return id
     }
 
-    func cancel(id: String) {
+    public func cancel(id: String) {
         if let task = self.downloadingTasks[id] {
             task.cancel()
             self.downloadingTasks[id] = nil

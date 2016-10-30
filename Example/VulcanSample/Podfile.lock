@@ -1,0 +1,16 @@
+PODS:
+  - Vulcan (0.1.2)
+
+DEPENDENCIES:
+  - Vulcan (from `./../../`)
+
+EXTERNAL SOURCES:
+  Vulcan:
+    :path: "./../../"
+
+SPEC CHECKSUMS:
+  Vulcan: f03edb4ed888457b66d0c7435b0cedbaba7c69d5
+
+PODFILE CHECKSUM: c323f0221e55238f40fe28e70dfb9e6098a35837
+
+COCOAPODS: 1.1.1
