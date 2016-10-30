@@ -89,11 +89,11 @@ public extension UIImageView {
     }
 
     public struct PriorityURL {
-        var url: URL
-        var priority: Int
-        var completion: ImageDownloadHandler?
+        public var url: URL
+        public var priority: Int
+        public var completion: ImageDownloadHandler?
 
-        init(url: URL, priority: Int = 0, completion: ImageDownloadHandler? = nil){
+        public init(url: URL, priority: Int = 0, completion: ImageDownloadHandler? = nil){
             self.url = url
             self.priority = priority
             self.completion = completion
