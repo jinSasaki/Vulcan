@@ -21,6 +21,7 @@
 		4925B9861DC609A900D9408A /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9851DC609A900D9408A /* ImageDownloaderTests.swift */; };
 		6894B05AED34751A8A454DD2 /* Pods_Vulcan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F35E0A22F80D500660F2BC9 /* Pods_Vulcan.framework */; };
 		933865C71DC33F5800B7D6F3 /* Vulcan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933865BD1DC33F5800B7D6F3 /* Vulcan.framework */; };
+		C191F34F462EFA51BFA7283D /* Pods_Vulcan_VulcanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9DDE22288797327A926157F /* Pods_Vulcan_VulcanTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		3F35E0A22F80D500660F2BC9 /* Pods_Vulcan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vulcan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F7132BD8AB78ACEF20121E9 /* Pods-Vulcan-VulcanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vulcan-VulcanTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vulcan-VulcanTests/Pods-Vulcan-VulcanTests.release.xcconfig"; sourceTree = "<group>"; };
 		4925B93F1DC6044800D9408A /* ImageCachable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCachable.swift; sourceTree = "<group>"; };
 		4925B9401DC6044800D9408A /* ImageComposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageComposable.swift; sourceTree = "<group>"; };
 		4925B9411DC6044800D9408A /* ImageDecorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageDecorder.swift; sourceTree = "<group>"; };
@@ -51,8 +53,10 @@
 		933865BD1DC33F5800B7D6F3 /* Vulcan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Vulcan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		933865C61DC33F5800B7D6F3 /* VulcanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VulcanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		94E70DF925C9BB3880BDEA08 /* Pods-VulcanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VulcanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VulcanTests/Pods-VulcanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A43B17AE63B1D98EB8C89C50 /* Pods-Vulcan-VulcanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vulcan-VulcanTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Vulcan-VulcanTests/Pods-Vulcan-VulcanTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BE55B85970977C968E00D53A /* Pods_VulcanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VulcanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C3B9DD51F111A6B1353B844F /* Pods-Vulcan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Vulcan.release.xcconfig"; path = "Pods/Target Support Files/Pods-Vulcan/Pods-Vulcan.release.xcconfig"; sourceTree = "<group>"; };
+		F9DDE22288797327A926157F /* Pods_Vulcan_VulcanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Vulcan_VulcanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 			files = (
 				933865C71DC33F5800B7D6F3 /* Vulcan.framework in Frameworks */,
 				386C3AF5857C703F8C472818 /* Pods_VulcanTests.framework in Frameworks */,
+				C191F34F462EFA51BFA7283D /* Pods_Vulcan_VulcanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +88,8 @@
 				C3B9DD51F111A6B1353B844F /* Pods-Vulcan.release.xcconfig */,
 				94E70DF925C9BB3880BDEA08 /* Pods-VulcanTests.debug.xcconfig */,
 				71B486C36DB53B03A127662B /* Pods-VulcanTests.release.xcconfig */,
+				A43B17AE63B1D98EB8C89C50 /* Pods-Vulcan-VulcanTests.debug.xcconfig */,
+				3F7132BD8AB78ACEF20121E9 /* Pods-Vulcan-VulcanTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 			children = (
 				3F35E0A22F80D500660F2BC9 /* Pods_Vulcan.framework */,
 				BE55B85970977C968E00D53A /* Pods_VulcanTests.framework */,
+				F9DDE22288797327A926157F /* Pods_Vulcan_VulcanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,7 +276,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		2CE56DF910F861C0FB4F8BB4 /* [CP] Embed Pods Frameworks */ = {
@@ -283,7 +291,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VulcanTests/Pods-VulcanTests-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vulcan-VulcanTests/Pods-Vulcan-VulcanTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		66865CE16265183C6882B0B6 /* [CP] Copy Pods Resources */ = {
@@ -313,7 +321,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VulcanTests/Pods-VulcanTests-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Vulcan-VulcanTests/Pods-Vulcan-VulcanTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D7B9671ECCCFF331974ABAF7 /* [CP] Check Pods Manifest.lock */ = {
@@ -328,7 +336,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -506,7 +514,7 @@
 		};
 		933865D51DC33F5800B7D6F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E70DF925C9BB3880BDEA08 /* Pods-VulcanTests.debug.xcconfig */;
+			baseConfigurationReference = A43B17AE63B1D98EB8C89C50 /* Pods-Vulcan-VulcanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/VulcanTests/Info.plist;
@@ -519,7 +527,7 @@
 		};
 		933865D61DC33F5800B7D6F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 71B486C36DB53B03A127662B /* Pods-VulcanTests.release.xcconfig */;
+			baseConfigurationReference = 3F7132BD8AB78ACEF20121E9 /* Pods-Vulcan-VulcanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = Tests/VulcanTests/Info.plist;
