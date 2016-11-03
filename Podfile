@@ -8,8 +8,6 @@ target 'Vulcan' do
   # Pods for Vulcan
 
   target 'VulcanTests' do
-    inherit! :search_paths
-
     pod 'OHHTTPStubs'
     pod 'OHHTTPStubs/Swift'
   end
