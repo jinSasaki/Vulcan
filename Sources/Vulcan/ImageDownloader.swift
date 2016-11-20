@@ -38,6 +38,7 @@ public enum ImageDownloadError: Error, CustomDebugStringConvertible {
 }
 
 public struct DefaultImageDecoder: ImageDecoder {
+    public init() {}
     public func decode(data: Data, response: HTTPURLResponse, options: ImageDecodeOptions?) throws -> Image {
         guard let source = CGImageSourceCreateWithData(data as CFData, nil) else {
             throw ImageDecodeError.failedCreateSource
