@@ -192,7 +192,7 @@ public class ImageDownloader {
             do {
                 image = try weakSelf.decoder.decode(data: data, response: httpResponse, options: options)
             } catch let error {
-                handler?(url, .failure(ImageDownloadError.failedCompose(error)))
+                handler?(url, .failure(ImageDownloadError.failedDecode(error)))
                 return
             }
             self?.cache?.saveImage(image: image, with: id)
@@ -205,7 +205,7 @@ public class ImageDownloader {
                 let composedImage = try composer.compose(image: image)
                 handler?(url, .success(composedImage))
             } catch let error {
-                handler?(url, .failure(ImageDownloadError.failedDecode(error)))
+                handler?(url, .failure(ImageDownloadError.failedCompose(error)))
             }
         })
         self.downloadingTasks[id] = task
