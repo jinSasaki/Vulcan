@@ -7,7 +7,8 @@ Multi image downloader with priority in Swift
 - Caching images
 - Pure Swift
 - Composable image
-- [TODO] Support webp by subspec
+- Support webp
+  - Now supported by Carthage only. See [SwiftWebP](https://github.com/jinSasaki/SwiftWebP).
 
 Single download | Multi download with priority
 --- | ---
@@ -43,8 +44,6 @@ $ pod install
 
 
 ### Carthage
-**NOTE: Not supported yet**  
-
 Setup carthage:
 
 ```
@@ -60,6 +59,8 @@ github "jinSasaki/Vulcan"
 
 ## Usage
 
+### Image downloading and show
+
 ```swift
 import Vulcan
 
@@ -74,7 +75,35 @@ imageView.vl_setImage(urls: [
     ])
 ```
 
+### WebP image
+Add `SwiftWebP.framework`.
+
+```swift
+import Vulcan
+import SwiftWebP
+
+extension WebPDecoder: ImageDecoder {
+    public func decode(data: Data, response: HTTPURLResponse, options: ImageDecodeOptions?) throws -> Image {
+        let contentTypes = response.allHeaderFields.filter({ ($0.key as? String ?? "").lowercased() == "content-type" })
+        guard
+            let contentType = contentTypes.first,
+            let value = contentType.value as? String,
+            value == "image/webp",
+            let image = WebPDecoder.decode(data) else {
+                return try DefaultImageDecoder().decode(data: data, response: response, options: options)
+        }
+        return image
+    }
+}
+
+// Set decoder to shared ImageDownloader
+UIImageView.vl_sharedImageDownloader.decoder = WebPDecoder()
+
+// Request image with URL
+imageView.vl_setImage(url: URL(string: "/path/to/image")!)
+```
+
 ## Requirements
 - iOS 8.0+
-- Xcode 8.0+
-- Swift 3.0+
+- Xcode 8.1+
+- Swift 3.0.1+
