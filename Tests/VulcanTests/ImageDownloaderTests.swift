@@ -8,7 +8,6 @@
 
 import XCTest
 @testable import Vulcan
-import OHHTTPStubs
 
 class ImageDownloaderTests: XCTestCase {
     
@@ -18,7 +17,6 @@ class ImageDownloaderTests: XCTestCase {
         super.setUp()
 
         let configuration = URLSessionConfiguration.ephemeral
-        OHHTTPStubs.setEnabled(true, for: configuration)
         self.downloader = ImageDownloader(cache: nil, configuration: configuration)
     }
     

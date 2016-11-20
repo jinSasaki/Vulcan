@@ -1,12 +1,20 @@
 language: objective-c
-before_install:
-  - gem uninstall cocoapods -a
-  - gem install cocoapods
-  - pod repo update
-  - pod install
 script:
-  - xcodebuild build-for-testing test-without-building -workspace Vulcan.xcworkspace -scheme VulcanTests -configuration Debug -sdk iphonesimulator -destination "name=iPhone 7" ENABLE_TESTABILITY=YES
+  - xcodebuild build-for-testing test-without-building -scheme VulcanTests -configuration Debug -sdk iphonesimulator -destination "name=iPhone 7" ENABLE_TESTABILITY=YES
 osx_image: xcode8.1
-xcode_workspace: Vulcan.xcworkspace
+xcode_project: Vulcan.xcodeproj
 xcode_scheme: VulcanTests
 xcode_sdk: iphonesimulator
+env:
+  global:
+    - FRAMEWORK_NAME=Vulcan
+before_install:
+  - brew update
+  - brew outdated carthage || brew upgrade carthage
+before_script:
+  # bootstrap the dependencies for the project
+  # you can remove if you don't have dependencies
+  - carthage bootstrap
+before_deploy:
+  - carthage build --no-skip-current
+  - carthage archive $FRAMEWORK_NAME
