@@ -14,8 +14,7 @@ Multi image downloader with priority in Swift
 - Caching images
 - Pure Swift
 - Composable image
-- Support webp
-  - Now supported by Carthage only. See [SwiftWebP](https://github.com/jinSasaki/SwiftWebP).
+- Support WebP
 
 Single download | Multi download with priority
 --- | ---
@@ -83,11 +82,11 @@ imageView.vl_setImage(urls: [
 ```
 
 ### WebP image
-Add `SwiftWebP.framework`.
+If you installed via Carthage, add `SwiftWebP.framework`.
 
 ```swift
 import Vulcan
-import SwiftWebP
+import SwiftWebP // Only installed via Carthage
 
 extension WebPDecoder: ImageDecoder {
     public func decode(data: Data, response: HTTPURLResponse, options: ImageDecodeOptions?) throws -> Image {
