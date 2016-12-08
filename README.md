@@ -82,7 +82,8 @@ imageView.vl_setImage(urls: [
 ```
 
 ### WebP image
-If you installed via Carthage, add `SwiftWebP.framework`.
+If you installed via CocoaPods, add `pod 'Vulcan/WebP'`.
+If you installed via Carthage, add `SwiftWebP.framework` to project.
 
 ```swift
 import Vulcan
