@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Vulcan'
-  s.version = '0.2.0'
+  s.version = '0.2.1'
   s.license = 'MIT'
   s.summary = 'Multi image downloader with priority in Swift'
   s.homepage = 'https://github.com/jinSasaki/Vulcan'
