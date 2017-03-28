@@ -12,10 +12,8 @@
 		4925B9491DC6044800D9408A /* ImageDecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9411DC6044800D9408A /* ImageDecorder.swift */; };
 		4925B94A1DC6044800D9408A /* ImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9421DC6044800D9408A /* ImageDownloader.swift */; };
 		4925B94B1DC6044800D9408A /* ImageResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9431DC6044800D9408A /* ImageResult.swift */; };
-		4925B94C1DC6044800D9408A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4925B9441DC6044800D9408A /* Info.plist */; };
 		4925B94D1DC6044800D9408A /* UIImageView+MultiImageDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9451DC6044800D9408A /* UIImageView+MultiImageDownloader.swift */; };
 		4925B97C1DC6066000D9408A /* Vulcan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4925B9561DC6060B00D9408A /* Vulcan.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4925B9831DC6071600D9408A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4925B9801DC6071600D9408A /* Info.plist */; };
 		4925B9841DC6071600D9408A /* VulcanTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9811DC6071600D9408A /* VulcanTests.swift */; };
 		4925B9861DC609A900D9408A /* ImageDownloaderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925B9851DC609A900D9408A /* ImageDownloaderTests.swift */; };
 		933865C71DC33F5800B7D6F3 /* Vulcan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 933865BD1DC33F5800B7D6F3 /* Vulcan.framework */; };
@@ -168,7 +166,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Sasakky;
 				TargetAttributes = {
 					933865BC1DC33F5800B7D6F3 = {
@@ -204,7 +202,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4925B94C1DC6044800D9408A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4925B9831DC6071600D9408A /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +266,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -323,6 +320,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

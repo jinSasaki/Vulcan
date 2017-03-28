@@ -28,7 +28,7 @@ public enum ImageDownloadError: Error, CustomDebugStringConvertible {
         case .networkError(let error):
             return "Network error: \(error)"
         case .invalidResponse(let response):
-            return "Invalid response: \(response)"
+            return "Invalid response: \(String(describing: response))"
         case .failedDecode(let error):
             return "Failed decode: \(error)"
         case .failedCompose(let error):
