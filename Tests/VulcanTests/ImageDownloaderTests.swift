@@ -34,9 +34,9 @@ class ImageDownloaderTests: XCTestCase {
 
     func testSetCache() {
         struct Cache: ImageCachable {
-            var memoryCapacity:Int { return 100 }
-            var diskCapacity: Int { return 100 }
-            var diskPath: String? { return "path" }
+            var memoryCapacity:Int = 100
+            var diskCapacity: Int = 100
+            var diskPath: String? = "path"
             func saveImage(image: Image, with id: String) {}
             func image(id: String) -> Image? { return nil }
             func remove(id: String) {}

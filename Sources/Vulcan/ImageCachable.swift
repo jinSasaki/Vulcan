@@ -9,9 +9,9 @@
 import Foundation
 
 public protocol ImageCachable {
-    var memoryCapacity: Int { get }
-    var diskCapacity: Int { get }
-    var diskPath: String? { get }
+    var memoryCapacity: Int { get set }
+    var diskCapacity: Int { get set }
+    var diskPath: String? { get set }
     
     func saveImage(image: Image, with id: String)
     func image(id: String) -> Image?
