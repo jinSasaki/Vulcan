@@ -71,11 +71,11 @@ github "jinSasaki/Vulcan"
 import Vulcan
 
 // Single downloading
-imageView.vl_setImage(url: URL(string: "/path/to/image")!)
+imageView.vl.setImage(url: URL(string: "/path/to/image")!)
 
 // Multi downloading
 // This image will be overridden by the image of higher priority URL.
-imageView.vl_setImage(urls: [
+imageView.vl.setImage(urls: [
     .url(URL(string: "/path/to/image")!, priority: 100),
     .url(URL(string: "/path/to/image")!, priority: 1000)
     ])
@@ -104,10 +104,10 @@ extension WebPDecoder: ImageDecoder {
 }
 
 // Set decoder to shared ImageDownloader
-UIImageView.vl_sharedImageDownloader.decoder = WebPDecoder()
+Vulcan.defaultImageDownloader.decoder = WebPDecoder()
 
 // Request image with URL
-imageView.vl_setImage(url: URL(string: "/path/to/image")!)
+imageView.vl.setImage(url: URL(string: "/path/to/image")!)
 ```
 
 ## Requirements

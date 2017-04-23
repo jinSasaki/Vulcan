@@ -1,5 +1,32 @@
 PODS:
-  - Vulcan (0.1.2)
+  - libwebp (0.5.1):
+    - libwebp/core (= 0.5.1)
+    - libwebp/dec (= 0.5.1)
+    - libwebp/demux (= 0.5.1)
+    - libwebp/dsp (= 0.5.1)
+    - libwebp/enc (= 0.5.1)
+    - libwebp/mux (= 0.5.1)
+    - libwebp/utils (= 0.5.1)
+    - libwebp/webp (= 0.5.1)
+  - libwebp/core (0.5.1):
+    - libwebp/webp
+  - libwebp/dec (0.5.1):
+    - libwebp/core
+  - libwebp/demux (0.5.1):
+    - libwebp/core
+  - libwebp/dsp (0.5.1):
+    - libwebp/core
+  - libwebp/enc (0.5.1):
+    - libwebp/core
+  - libwebp/mux (0.5.1):
+    - libwebp/core
+  - libwebp/utils (0.5.1):
+    - libwebp/core
+  - libwebp/webp (0.5.1)
+  - Vulcan (0.3.0):
+    - Vulcan/WebP (= 0.3.0)
+  - Vulcan/WebP (0.3.0):
+    - libwebp
 
 DEPENDENCIES:
   - Vulcan (from `./../../`)
@@ -9,8 +36,9 @@ EXTERNAL SOURCES:
     :path: "./../../"
 
 SPEC CHECKSUMS:
-  Vulcan: c7e086a73353925504a380b26c0d041d1ee56a78
+  libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
+  Vulcan: e97f6fd05640eaf72023901a0259369f090adb77
 
 PODFILE CHECKSUM: c323f0221e55238f40fe28e70dfb9e6098a35837
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.2.0

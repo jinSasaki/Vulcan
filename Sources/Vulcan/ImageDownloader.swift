@@ -63,29 +63,23 @@ public struct DefaultImageDecoder: ImageDecoder {
     }
 }
 
-public struct DefaultImageCache: ImageCachable {
-    public var memoryCapacity: Int {
-        return 1 * 1024 * 1024
-    }
-    public var diskCapacity: Int {
-        return 10 * 1024 * 1024
-    }
-    public var diskPath: String? {
-        return nil
-    }
+open class ImageCache: ImageCachable {
+    public var memoryCapacity: Int = 1 * 1024 * 1024
+    public var diskCapacity: Int = 10 * 1024 * 1024
+    public var diskPath: String? = nil
 
     let cache = NSCache<NSString, Image>()
 
-    public func saveImage(image: Image, with id: String) {
+    open func saveImage(image: Image, with id: String) {
         cache.setObject(image, forKey: id as NSString)
     }
-    public func image(id: String) -> Image? {
+    open func image(id: String) -> Image? {
         return cache.object(forKey: id as NSString)
     }
-    public func remove(id: String) {
+    open func remove(id: String) {
         cache.removeObject(forKey: id as NSString)
     }
-    public func removeAll() {
+    open func removeAll() {
         cache.removeAllObjects()
     }
 }
@@ -102,7 +96,7 @@ public class ImageDownloader {
     fileprivate var configuration: URLSessionConfiguration
     fileprivate var session: URLSession
 
-    public init(cache: ImageCachable? = DefaultImageCache(), configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
+    public init(cache: ImageCachable? = ImageCache(), configuration: URLSessionConfiguration = URLSessionConfiguration.default) {
         self.cache = cache
         self.configuration = configuration
 

@@ -15,13 +15,13 @@ class ViewController: UIViewController {
 
     @IBAction func didTapButton() {
         imageView.image = nil
-        imageView.vl_setImage(url: URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_1024.jpg")!)
+        imageView.vl.setImage(url: URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_1024.jpg")!)
     }
 
     @IBAction func didTapPriorityButton() {
         imageView.image = nil
 
-        imageView.vl_setImage(urls: [
+        imageView.vl.setImage(urls: [
             .url(URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_100.jpg")!, priority: 100),
             .url(URL(string: "https://github.com/jinSasaki/Vulcan/raw/master/assets/sample_1024.jpg")!, priority: 1000)
             ])
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
 
     @IBAction func didTapCacheClearButton() {
         imageView.image = nil
-        UIImageView.vl_sharedImageDownloader.cache?.removeAll()
+        Vulcan.defaultImageDownloader.cache?.removeAll()
     }
 }
 
