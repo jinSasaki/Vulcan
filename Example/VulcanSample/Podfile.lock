@@ -23,9 +23,9 @@ PODS:
   - libwebp/utils (0.5.1):
     - libwebp/core
   - libwebp/webp (0.5.1)
-  - Vulcan (0.3.0):
-    - Vulcan/WebP (= 0.3.0)
-  - Vulcan/WebP (0.3.0):
+  - Vulcan (0.3.1):
+    - Vulcan/WebP (= 0.3.1)
+  - Vulcan/WebP (0.3.1):
     - libwebp
 
 DEPENDENCIES:
@@ -37,8 +37,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   libwebp: b9126f8982a95370cf4eaad9bb3fefd57f052c15
-  Vulcan: e97f6fd05640eaf72023901a0259369f090adb77
+  Vulcan: 0a87b737409800640b81eb1e2a8337f668ffafd9
 
 PODFILE CHECKSUM: c323f0221e55238f40fe28e70dfb9e6098a35837
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1
