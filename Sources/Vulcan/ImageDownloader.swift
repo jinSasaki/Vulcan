@@ -101,7 +101,10 @@ public class ImageDownloader {
         self.configuration = configuration
 
         self.session = URLSession(configuration: configuration)
-        self.configuration.urlCache = URLCache(memoryCapacity: cache?.memoryCapacity ?? 0, diskCapacity: cache?.diskCapacity ?? 0, diskPath: cache?.diskPath ?? nil)
+        let memoryCapacity: Int = cache?.memoryCapacity ?? 0
+        let diskCapacity: Int = cache?.diskCapacity ?? 0
+        let diskPath: String? = cache?.diskPath
+        self.configuration.urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: diskPath)
 
         self.decoder = DefaultImageDecoder()
     }
@@ -110,7 +113,10 @@ public class ImageDownloader {
         self.cache?.removeAll()
 
         self.cache = cache
-        self.configuration.urlCache = URLCache(memoryCapacity: cache?.memoryCapacity ?? 0, diskCapacity: cache?.diskCapacity ?? 0, diskPath: cache?.diskPath)
+        let memoryCapacity: Int = cache?.memoryCapacity ?? 0
+        let diskCapacity: Int = cache?.diskCapacity ?? 0
+        let diskPath: String? = cache?.diskPath
+        self.configuration.urlCache = URLCache(memoryCapacity: memoryCapacity, diskCapacity: diskCapacity, diskPath: diskPath)
     }
 
     public func set(configuration: URLSessionConfiguration) {
