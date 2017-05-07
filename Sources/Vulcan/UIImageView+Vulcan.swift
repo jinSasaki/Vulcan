@@ -13,15 +13,14 @@ private var kVulcanKey: UInt = 0
 public extension UIImageView {
 
     public var vl: Vulcan {
-        get {
-            let vulcan = objc_getAssociatedObject(self, &kVulcanKey) as? Vulcan ?? Vulcan()
-            if vulcan.imageView == nil {
-                vulcan.imageView = self
-            }
+        if let vulcan = objc_getAssociatedObject(self, &kVulcanKey) as? Vulcan {
             return vulcan
         }
-        set {
-            objc_setAssociatedObject(self, &kVulcanKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        let vulcan = Vulcan()
+        if vulcan.imageView == nil {
+            vulcan.imageView = self
         }
+        objc_setAssociatedObject(self, &kVulcanKey, vulcan, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+        return vulcan
     }
 }
