@@ -111,6 +111,6 @@ imageView.vl.setImage(url: URL(string: "/path/to/image")!)
 ```
 
 ## Requirements
-- iOS 8.0+
+- iOS 9.0+
 - Xcode 8.1+
 - Swift 3.0.1+
