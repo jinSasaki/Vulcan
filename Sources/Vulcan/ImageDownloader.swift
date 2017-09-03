@@ -69,6 +69,8 @@ open class ImageCache: ImageCachable {
     public var diskPath: String? = nil
 
     let cache = NSCache<NSString, Image>()
+    
+    public init() {}
 
     open func saveImage(image: Image, with id: String) {
         cache.setObject(image, forKey: id as NSString)
